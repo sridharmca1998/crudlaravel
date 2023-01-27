@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my4.css">
+  <title>Document</title>
+  <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+        <p><span style="color:#462fd4">Alobin</span><br>Project Management</p>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="#"><i class="fas fa-chart-line"></i>Project</a></li>
+          <li><a href="#"><i class="fa-solid fa-clipboard"></i>Tasks</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i>Discussion</a></li>
+          <li><a href="#"><i class="fa-solid fa-file-lines"></i>Document</a></li>
+          <li><a href="#"><i class="fas fa-user"></i>User</a></li>
+          <li><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i>Invoice</a></li>
+        </ul>
+      </div>
+      <div class="logout">
+        <ul>
+          <li><a href=#><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header">
+      <div class="child1">
+        <div class="search">
+          <form action="#" class="bar">
+            <button type="submit"><i class="fas fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+      </div>
+
+      <div class="child2">
+        <div class="name">
+          <h3>JIYATH LIMRAN</h3>
+          <P>jiyathlimran@gmail.com</P>
+        </div>
+        <div class="image">
+          <img src="propic.jpg" alt="profile picture">
+          <div class="ellipsis"><a href=""><i class="fas fa-ellipsis"></i></a></div>
+          <div class="bell"><a href=""><i class="far fa-bell"></i></a></div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="main">
+      <div class="child1">
+        <p>Total Receivable: $12,570</p>
+        <div class="chart">
+          <div class="chart1">
+            <div class="chart2"></div>
+          </div>
+        </div>
+        <div class="current">
+          <span style="color: #f9b859;">Current</span><br>$2850
+        </div>
+        <div class="overdue">
+          <span style="color: #f26031;">Overdue</span> <span style="color: #909090;">(01-15 days)</span><br>$4250
+        </div>
+        <div class="days">
+          <span style="color: #909090;">(15-30 days)</span><br>$3450
+        </div>
+        <div class="above">
+          <span style="color: #909090;">Above 30 days</span><br>$2020
+        </div>
+      </div>
+      <div class="child2">
+        <p>Monthly Earning</p>
+        <div class="donut"></div>
+        <div class="details">
+          <div class="orange">
+            <span style="color: #f25f33;"><i class="fa-solid fa-circle"></i> Chrome</span> 6520</div>
+
+          <div class="yellow">
+            <span style="color: #fcb758;"><i class="fa-solid fa-circle"></i> Firefox</span> 2150</div>
+          <div class="green">
+            <span style="color: #01bc39;"><i class="fa-solid fa-circle"></i> Safari</span> 3750
+          </div>
+          <div class="blue">
+            <span style="color: #3b36db;"><i class="fa-solid fa-circle"></i> Others</span> 750
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="info">
+      <div class="child1">
+        <p>Recent Candidates</p>
+      </div>
+      <a href="">
+        <div class="child2">Create New Invoice</div>
+      </a>
+    </div>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Inv. No</th>
+          <th>Client Name</th>
+          <th>Product</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>#121</td>
+          <td><span style="color: #909090;">Christopher Nolan</span></td>
+          <td><span style="color: #3c21f9;">UX/UI Design Services</span></td>
+          <td><span style="color: #909090;">20/05/2018</span></td>
+          <td>$20,125</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#122</td>
+          <td><span style="color: #909090;">Mark Specter</span></td>
+          <td><span style="color: #3c21f9;">.Net Consultancy Services</span></td>
+          <td><span style="color: #909090;">29/05/2018</span></td>
+          <td>$20,100</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#123</td>
+          <td><span style="color: #909090;">Quentin Tarantino</span></td>
+          <td><span style="color: #3c21f9;">Art Direction</span></td>
+          <td><span style="color: #909090;">06/06/2018</span></td>
+          <td>$20,020</td>
+          <td><button class="draft"><span style="color: white;">Draft</span></button></td>
+        </tr>
+        <tr>
+          <td>#124</td>
+          <td><span style="color: #909090;">Iman Vellani</span></td>
+          <td><span style="color: #3c21f9;">Software testig and QA</span></td>
+          <td><span style="color: #909090;">18/06/2018</span></td>
+          <td>$19,786</td>
+          <td><button class="draft"><span style="color: white;">Draft</span></button></td>
+        </tr>
+        <tr>
+          <td>#125</td>
+          <td><span style="color: #909090;">Jenifer Lawrence</span></td>
+          <td><span style="color: #3c21f9;">App Application Development</span></td>
+          <td><span style="color: #909090;">08/07/2018</span></td>
+          <td>$19,253</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#126</td>
+          <td><span style="color: #909090;">Martin</span></td>
+          <td><span style="color: #3c21f9;">App Application Development</span></td>
+          <td><span style="color: #909090;">08/07/2018</span></td>
+          <td>$10,786</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#127</td>
+          <td><span style="color: #909090;">Bruce Wayne</span></td>
+          <td><span style="color: #3c21f9;">App Application Development</span></td>
+          <td><span style="color: #909090;">08/07/2018</span></td>
+          <td>$20,125</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#128</td>
+          <td><span style="color: #909090;">Steve Harrington</span></td>
+          <td><span style="color: #3c21f9;">App Application Development</span></td>
+          <td><span style="color: #909090;">08/07/2018</span></td>
+          <td>$8,120</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#129</td>
+          <td><span style="color: #909090;">Robin Thurman</span></td>
+          <td><span style="color: #3c21f9;">App Application Development</span></td>
+          <td><span style="color: #909090;">08/07/2018</span></td>
+          <td>$20,125</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+        <tr>
+          <td>#130</td>
+          <td><span style="color: #909090;">Christopher Nolan</span></td>
+          <td><span style="color: #3c21f9;">UX/UI Design Services</span></td>
+          <td><span style="color: #909090;">20/05/2018</span></td>
+          <td>$8,451</td>
+          <td><button class="paid"><span style="color: white;">Paid</span></button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+
+</html>

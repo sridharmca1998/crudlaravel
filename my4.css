@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.8fr 0.2fr 4fr;
+    grid-template-areas: 
+    "sidebar header header header header"
+    "sidebar main main main main"
+    "sidebar info info info info"
+    "sidebar table table table table";
+    grid-gap: 0.4rem;
+    height: 100%;
+
+}
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    grid-area: sidebar;
+    min-width: 250px;
+    box-shadow: 2px 2px 8px 0.5px #d0d0d0;
+    /* border-right: 2px solid black; */
+
+}
+.logo{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 80px;
+    margin-top: 5px;
+}
+.logo span{
+    font-size: 26px;
+    font-weight: bolder;
+    user-select: none;
+}
+.logo p{
+    font-size: 15px;
+    color: #747474;
+    user-select: none;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin-top: 40px;
+}
+.menu li{
+    list-style: none;
+    font-size: 18px;
+
+}
+.menu ul a{
+    display: block;
+    background-color: white;
+    color: #747474;
+    line-height: 55px;
+    text-decoration: none;
+    padding-right: 80px;
+    
+}
+.menu ul li a i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.menu ul li a:hover{
+    background-color: #e2deff;
+    color: #3d23e9;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.logout{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-top: 27vh;
+
+}
+.logout li{
+    list-style: none;
+    font-size: 18px;
+
+}
+.logout ul a{
+    display: block;
+    background-color: white;
+    color: #747474;
+    line-height: 50px;
+    text-decoration: none;
+    padding-right: 100px;
+    
+}
+.logout ul li a i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.logout ul li a:hover{
+    background-color: #e2deff;
+    color: #3d23e9;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.header{
+    background-color: #f9fafe;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 630px 320px;
+    justify-content: space-between;
+}
+.header .child1{
+    background-color: #f9fafe;
+    margin: 10px;
+    margin-left: 30px;
+}
+.header .child2{
+    background-color: #f9fafe;
+    margin: 10px;
+}
+.name {
+    color: #454853;
+    margin-top: 10px;
+    float: right;
+    margin-right: 15px;
+
+}
+.name h3{
+    background-color: #f9fafe;
+}
+.name p{
+    background-color: #f9fafe;
+}
+.image img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border: 2px solid #454853;
+}
+.image .ellipsis{
+    float: right;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.image .ellipsis a{
+    color: #454853;
+}
+.image .bell{
+    float: right;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.image .bell a{
+    color: #454853;
+}
+.header .search{
+    border: 2px solid #e2e2e2;
+    max-width: 600px;
+    padding: 3px;
+    border-radius: 20px;
+    margin-top: 14px;
+    background-color: rgb(255, 255, 255);
+
+}
+.header .bar{
+    border-radius: 50px;
+}
+.header .bar input{
+    width: 550px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 2px;
+    background-color: transparent;
+}
+
+.header .bar {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: none;
+    margin-left: 5px;
+}
+.header .bar button{
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    margin-top: 3px;
+}
+.header .bar button i{
+    color: #767676;
+}
+.main{
+    background-color: #f9fafe;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 60% auto;
+    column-gap: 20px;
+
+}
+.main .child1{
+    background-color: #ffffff;
+    margin-left: 30px;
+    box-shadow: 2px 2px 8px 2px #d0d0d0;
+    border-radius: 5px;
+}
+.main .child1 p{
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #909090;
+}
+.main .child1 .chart{
+    width: 85%;
+    height: 10px;
+    background-color: #e0e7ff;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.main .child1 .chart .chart1{
+    width: 20%;
+    height: 10px;
+    background-color: #f9b859;
+    border-radius: 20px 0px 0px 20px;
+}
+.main .child1 .chart .chart1 .chart2{
+    width: 180%;
+    height: 10px;
+    background-color: #f26031;
+    margin-left: 100%;
+    border-radius: 0px 20px 20px 0px;
+}
+.main .child1 .current{
+    margin-top: 10px;
+    margin-left: 4%;
+    font-size: 16px;
+    color: #515254;
+}
+.main .child1 .overdue{
+    margin-left: 21%;
+    margin-top: -39px;
+    font-size: 16px;
+    color: #515254;
+} 
+.main .child1 .days{
+    text-align: center;
+    margin-left: 15%;
+    margin-top: -38px;
+    font-size: 16px;
+    color: #515254;
+}
+.main .child1 .above{
+    float: right;
+    margin-top: -39px;
+    margin-right: 11%;
+    font-size: 16px;
+    color: #515254;
+}
+
+.main .child2{
+    background-color: #ffffff;
+    margin-right: 30px;
+    box-shadow: 2px 2px 8px 2px #d0d0d0;
+    border-radius: 5px;
+}
+.donut {
+    background: rgb(255, 255, 255);
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 20px solid #f25f33;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.donut {
+    ...
+    border: 20px solid #f25f33;
+    border-top: 20px solid #fcb758;
+    border-left: 20px solid #01bc39;
+    border-right: 20px solid #3b36db;
+}
+
+.main .child2 p{
+    float: right;
+    margin-right: 3%;
+    margin-top: 2px;
+}
+.main .child2 .details i{
+    font-size: 12px;
+}
+.main .child2 .details{
+    color: #515254;
+}
+.main .child2 .orange {
+    margin-left: 35%;
+/* float: right; */
+    margin-top: 32px;
+}
+.main .child2 .yellow {
+    float: right;
+    margin-right: 4%;
+    margin-top: -20px;
+}
+.main .child2 .green{
+    margin-top: 5px;
+    text-align: center;
+    margin-left: -37px;
+}
+.main .child2 .blue{
+    float: right;
+    margin-right: 6%;
+    margin-top: -20px;
+}
+
+.info{
+    /* background-color: lightgreen; */
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 300px 250px;
+    justify-content: space-between;
+}
+.info .child1{
+    background-color: #f9fafe;
+    margin: 10px;
+    font-size: 26px;  
+    color: #515254; 
+    margin-left: 30px;
+}
+
+.info .child1 p{
+    margin-top: 5px;
+    margin-left: 10px;
+    user-select: none;
+}
+.info .child2{
+    background-color: #3c22f7;
+    /* margin: 10px; */
+    margin-right: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.info a{
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+.table{
+    background-color: #f9fafe;
+    grid-area: table;
+
+}
+table{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    /* margin: 10px; */
+    color: #5d5e61;
+    user-select: none;
+    border-collapse: collapse;  
+
+}
+.table tr{
+ 
+}
+.table tr td{
+    padding-left: 40px;
+}
+.table tr th{
+    padding-left: 40px;
+}
+.table tr:hover{
+    box-shadow: 3px 3px 8px 2px #d0d0d0;
+    border-radius: 10px;
+}
+.table td .paid{
+    border: none;
+    background-color: #03bb37;
+    padding: 5px 30px;
+    border-radius: 6px;
+}
+.table td .draft{
+    border: none;
+    background-color: #9c9c9c;
+    padding: 5px 30px;
+    border-radius: 6px;
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.3fr 0.5fr 0.3fr 1fr;
+        grid-template-areas: 
+        "sidebar"
+        "header"
+        "main"
+        "info"
+        "footer";
+    }
+    .header{
+        grid-template-columns: auto;
+
+    }
+    .main{
+        grid-template-columns: auto;
+
+    }
+    .info{
+        grid-template-columns: auto;
+
+    }
+    .table{
+        grid-template-columns: auto;
+
+    }
+}
